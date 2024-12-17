@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rizal Building Map</title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+  </head>
+  <body class="info-body">
+    <!-- Navigation Bar shown in larger screens -->
+    <nav class="navigation main-nav">
+      <div>
+        <a href="/index.html"
+          ><img
+            src="../images/ccc-home-logo.png"
+            alt="CCC Official Logo"
+            width="120px"
+        /></a>
+      </div>
+      <h3>CCC Interactive Map</h3>
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+        <i
+          class="fa fa-bars nav-btn"
+          aria-hidden="true"
+          onclick="showMobileMenu()"
+        ></i>
+      </ul>
+    </nav>
+
+    <!-- Navigation Bar shown in small and mobile devices -->
+    <nav class="navigation side-nav">
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="info-bg">
+      <div>
+        <div class="info-field">
+          <h2>External Links</h2>
+
+          <div>
+            <h4>CCC Main Website</h4>
+            <a href="https://ccc.edu.ph/"><h5>Click Here</h5></a>
+          </div>
+
+          <div>
+            <h4>CCC Learning Management System</h4>
+            <a href="https://lms.ccc.edu.ph/"><h5>Click Here</h5></a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../scripts/script.js"></script>
+</html>

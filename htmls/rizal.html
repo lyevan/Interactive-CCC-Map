@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rizal Building Map</title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar shown in larger screens -->
+    <nav class="navigation main-nav">
+      <div>
+        <a href="/index.html"
+          ><img
+            src="../images/ccc-home-logo.png"
+            alt="CCC Official Logo"
+            width="120px"
+        /></a>
+      </div>
+      <h3>CCC Interactive Map</h3>
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+        <i
+          class="fa fa-bars nav-btn"
+          aria-hidden="true"
+          onclick="showMobileMenu()"
+        ></i>
+      </ul>
+    </nav>
+
+    <!-- Navigation Bar shown in small and mobile devices -->
+    <nav class="navigation side-nav">
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Navigation Bar shown in small and mobile devices -->
+    <nav class="navigation side-nav">
+      <ul>
+        <li>
+          <a href="index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <div class="svg-container first-floor">
+          <svg
+            width="323.47812mm"
+            height="231.13402mm"
+            viewBox="0 0 323.47812 231.13402"
+            version="1.1"
+            id="svg1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <defs id="defs1" />
+            <rect
+              onclick="showInfo('Rizal 2','(the room description)','M 162.14825,223.12833 V 185.7375 h 109.84341 v 6.82283')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect83"
+              width="56.290024"
+              height="30.566454"
+              x="260.59814"
+              y="192.56033"
+            />
+            <rect
+              onclick="showInfo('Rizal 1','(the room description)','M 162.14825,223.12833 V 185.7375 h 84.39935 v 6.82283')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect84"
+              width="57.571835"
+              height="30.566454"
+              x="203.02635"
+              y="192.56033"
+            />
+            <rect
+              onclick="showInfo('Male CR','(the room description)','M 162.14825,223.12833 V 185.7375 h 122.78446')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect85"
+              width="31.955492"
+              height="13.297206"
+              x="284.93271"
+              y="179.26314"
+            />
+            <rect
+              onclick="showInfo('Rizal 3','(the room description)','M 162.14825,223.12833 V 185.7375 h 65.9095 v -13.24175 h 7.61243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect86"
+              width="81.21801"
+              height="30.721121"
+              x="235.67018"
+              y="148.54201"
+            />
+            <rect
+              onclick="showInfo('Rizal 4','(the room description)','M 162.14825,223.12833 V 185.7375 h 65.9095 l 0,-45.25633 h 7.61243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect87"
+              width="81.168243"
+              height="39.39463"
+              x="235.69502"
+              y="109.12814"
+              ry="0"
+            />
+            <rect
+              onclick="showInfo('Rizal 5','(the room description)','M 162.14825,223.12833 V 185.7375 h 56.64908 V 71.689503 h 71.57787 l 0,5.781254')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect88"
+              width="81.168221"
+              height="31.657394"
+              x="235.69502"
+              y="77.470757"
+            />
+            <rect
+              onclick="showInfo('Rizal 6','(the room description)','M 162.14825,223.12833 V 185.7375 h 56.64908 V 71.689503 h 88.79003 V 64.01832')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect89"
+              width="48.58844"
+              height="55.011646"
+              x="268.28705"
+              y="9.0066738"
+            />
+            <rect
+              onclick="showInfo('Rizal 7','(the room description)','M 162.14825,223.12833 V 185.7375 h 56.64908 V 71.689503 h 39.04836 V 64.01832')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect90"
+              width="48.58844"
+              height="55.011646"
+              x="219.69858"
+              y="9.0066738"
+            />
+            <rect
+              onclick="showInfo('Rizal 8','(the room description)','M 162.14825,223.12833 V 185.7375 h 56.64908 V 71.689503 H 208.10402 V 64.01832')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect91"
+              width="48.58844"
+              height="55.011646"
+              x="171.11012"
+              y="9.0066738"
+            />
+            <rect
+              onclick="showInfo('Rizal 9','(the room description)','M 162.14825,223.12833 V 185.7375 H 105.49917 V 71.689503 h 26.56831 V 64.01832')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect92"
+              width="48.58844"
+              height="55.011646"
+              x="122.5217"
+              y="9.0066738"
+            />
+            <rect
+              onclick="showInfo('Rizal Faculty','(the room description)','M 162.14825,223.12833 V 185.7375 H 105.49917 V 71.689503 H 81.796647 V 64.01832')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect93"
+              width="48.58844"
+              height="55.011646"
+              x="73.651146"
+              y="9.0066738"
+            />
+            <rect
+              onclick="showInfo('Female CR','(the room description)','M 162.14825,223.12833 V 185.7375 H 105.49917 V 71.689503 H 61.159147 V 23.53707 H 47.095833')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect95"
+              width="39.6875"
+              height="27.518621"
+              x="7.4083328"
+              y="8.9958324"
+            />
+            <rect
+              onclick="showInfo('Male CR','(the room description)','M 162.14825,223.12833 V 185.7375 H 105.49917 V 71.689503 H 61.159147 v -18.5191 H 47.095833')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect96"
+              width="39.6875"
+              height="27.518621"
+              x="7.4083328"
+              y="36.514454"
+            />
+            <rect
+              onclick="showInfo('Rizal 13','(the room description)','M 162.14825,223.12833 V 185.7375 H 52.30484 v 6.82283')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect97"
+              width="56.290024"
+              height="30.566454"
+              x="-63.698357"
+              y="192.56339"
+              transform="scale(-1,1)"
+            />
+            <rect
+              onclick="showInfo('Rizal 14','(the room description)','M 162.14825,223.12833 V 185.7375 l -52.78136,0.003 v 6.82283')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect98"
+              width="57.571835"
+              height="30.566454"
+              x="-121.27016"
+              y="192.56339"
+              transform="scale(-1,1)"
+            />
+            <rect
+              onclick="showInfo('Female CR','(the room description)','M 162.14825,223.30562 V 185.91479 H 39.363792')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect99"
+              width="31.955492"
+              height="13.297206"
+              x="-39.363792"
+              y="179.26619"
+              transform="scale(-1,1)"
+            />
+            <rect
+              onclick="showInfo('Room 12','(the room description)','M 162.14825,223.12833 V 185.7375 h -65.9095 v -13.24175 h -7.61243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect100"
+              width="81.21801"
+              height="30.721121"
+              x="-88.626335"
+              y="148.54506"
+              transform="scale(-1,1)"
+            />
+            <rect
+              onclick="showInfo('Room 11','(the room description)','M 162.14825,223.12833 V 185.7375 h -65.9095 v -45.25633 h -7.61243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect101"
+              width="81.168243"
+              height="39.39463"
+              x="-88.601494"
+              y="109.1312"
+              ry="0"
+              transform="scale(-1,1)"
+            />
+            <rect
+              onclick="showInfo('Room 10','(the room description)','M 162.14825,223.12833 V 185.7375 h -65.9095 v -84.17077 h -7.61243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: none;
+              "
+              id="rect102"
+              width="81.168221"
+              height="31.657394"
+              x="-88.601494"
+              y="77.473808"
+              transform="scale(-1,1)"
+            />
+            <rect
+              style="
+                fill: #ffffff;
+                stroke: #000000;
+                stroke-width: 0.665;
+                stroke-dasharray: 5.32000017, 2.66000009;
+                stroke-dashoffset: 0;
+                cursor: default;
+                pointer-events: none;
+              "
+              id="rect103"
+              width="76.727097"
+              height="83.301308"
+              x="123.78377"
+              y="77.475082"
+            />
+            <g id="g115">
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: 5.32, 2.65999;
+                  stroke-dashoffset: 0;
+                "
+                d="M 123.78377,77.475082 200.51086,160.7764"
+                id="path105"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: 5.32, 2.65999;
+                  stroke-dashoffset: 0;
+                "
+                d="M 200.51086,77.475082 123.78377,160.7764"
+                id="path106"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="M 7.4332731,77.473806 7.4083335,64.033074"
+                id="path107"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 47.095833,8.9958324 26.555313,0.01084"
+                id="path108"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 316.87547,64.018318 -0.0122,13.452438"
+                id="path109"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: 2.6600039, 0.66500097;
+                  stroke-dashoffset: 0;
+                "
+                d="m 182.5873,223.12733 -40.8781,0.002"
+                id="path113"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 121.27016,223.12983 20.43904,-5.2e-4"
+                id="path114"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-linecap: butt;
+                  stroke-linejoin: bevel;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 182.5873,223.12733 20.43905,-5.3e-4"
+                id="path115"
+              />
+            </g>
+          </svg>
+          <p style="top: 88%; left: 70.5%">R1</p>
+          <p style="top: 88%; left: 88%">R2</p>
+          <p style="top: 79%; left: 90.5%">M CR</p>
+          <p style="top: 69%; left: 84%">R3</p>
+          <p style="top: 54%; left: 84%">R4</p>
+          <p style="top: 38.8%; left: 84%">R5</p>
+          <p style="top: 14%; left: 89%">R6</p>
+          <p style="top: 14%; left: 74%">R7</p>
+          <p style="top: 14%; left: 59%">R8</p>
+          <p style="top: 14%; left: 44%">R9</p>
+          <p style="top: 12%; left: 26.8%">Faculty<br />Room</p>
+          <p style="top: 8.5%; left: 6%">F CR</p>
+          <p style="top: 20%; left: 6%">M CR</p>
+          <p style="top: 38.8%; right: 84%">R10</p>
+          <p style="top: 54%; right: 84.5%">R11</p>
+          <p style="top: 69%; right: 84%">R12</p>
+          <p style="top: 79%; right: 90.5%">F CR</p>
+          <p style="top: 88%; right: 70%">R14</p>
+          <p style="top: 88%; right: 87.7%">R13</p>
+        </div>
+      </div>
+
+      <div id="info-container" hidden></div>
+      <div class="floor-header rizal-header"><h2>Rizal Building</h2></div>
+    </main>
+  </body>
+  <script src="../scripts/script.js"></script>
+</html>

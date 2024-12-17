@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCC Interactive Map</title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navigation Bar shown in larger screens -->
+    <nav class="navigation main-nav">
+      <div>
+        <a href="#"
+          ><img
+            src="../images/ccc-home-logo.png"
+            alt="CCC Official Logo"
+            width="120px"
+        /></a>
+      </div>
+      <h3>CCC Interactive Map</h3>
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        </li>
+        <li>
+          <a href="htmls/about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="htmls/contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="htmls/links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+        <i
+          class="fa fa-bars nav-btn"
+          aria-hidden="true"
+          onclick="showMobileMenu()"
+        ></i>
+      </ul>
+    </nav>
+
+    <!-- Navigation Bar shown in small and mobile devices -->
+    <nav class="navigation side-nav">
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        </li>
+        <li>
+          <a href="htmls/about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="htmls/contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="htmls/links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="slider">
+        <div class="building-container">
+          <div
+            class="buildings"
+            style="background-image: url(./images/admin-front.jpg)"
+          >
+            <div class="content" id="content">
+              <div class="name" id="name">Admin Building</div>
+              <div class="description" id="description">
+                The Main Building of City College of Calamba that has all the
+                major offices involved in the management.
+              </div>
+              <a href="htmls/admin.html"
+                ><button id="button-nav">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  Navigate
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div
+            class="buildings"
+            style="background-image: url(./images/rizal-front.jpg)"
+          >
+            <div class="content" id="content">
+              <div class="name" id="name">Rizal Building</div>
+              <div class="description" id="description">
+                The former Regional Trial Court which caters 14 air-conditioned
+                classrooms.
+              </div>
+              <a href="htmls/rizal.html">
+                <button id="button-nav">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  Navigate
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="buildings"
+            style="background-image: url(./images/jmc-front.jpg)"
+          >
+            <div class="content" id="content">
+              <div class="name" id="name">JMC Building</div>
+              <div class="description" id="description">
+                The building where computer laboratories and the library is
+                located. It caters more than 10 classrooms.
+              </div>
+              <a href="/htmls/jmc.html"
+                ><button id="button-nav">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  Navigate
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail" id="thumbnail">
+          <div class="thumb-img1">
+            <img src="images/buildings/admin.png" alt="Admin Thumbnail Image" />
+            <p class="thumb-content">Admin Building</p>
+          </div>
+          <div class="thumb-img2">
+            <img src="images/buildings/rizal.png" alt="Rizal Thumbnail Image" />
+            <p class="thumb-content">Rizal Building</p>
+          </div>
+          <div class="thumb-img3" id="thumb-img3">
+            <img src="images/buildings/jmc.png" alt="JMC Thumbnail Image" />
+            <p class="thumb-content">JMC Building</p>
+          </div>
+        </div>
+
+        <div class="slider-buttons" id="slider-buttons">
+          <div class="button">
+            <button class="prev" onclick="prevView()">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="next" onclick="nextView()">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
