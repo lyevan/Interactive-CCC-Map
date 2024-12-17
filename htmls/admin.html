@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Building Map</title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar shown in larger screens -->
+    <nav class="navigation main-nav">
+      <div>
+        <a href="/index.html"
+          ><img
+            src="../images/ccc-home-logo.png"
+            alt="CCC Official Logo"
+            width="120px"
+        /></a>
+      </div>
+      <h3>CCC Interactive Map</h3>
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+        <i
+          class="fa fa-bars nav-btn"
+          aria-hidden="true"
+          onclick="showMobileMenu()"
+        ></i>
+      </ul>
+    </nav>
+
+    <!-- Navigation Bar shown in small and mobile devices -->
+    <nav class="navigation side-nav">
+      <ul>
+        <li>
+          <a href="/index.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html"
+            ><i class="fa fa-info-circle" aria-hidden="true"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="contacts.html"
+            ><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a
+          >
+        </li>
+        <li>
+          <a href="links.html"
+            ><i class="fa fa-external-link" aria-hidden="true"></i>Links</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <!-- <div id="tooltip" class="tooltip"></div> -->
+        <div class="svg-container first-floor" hidden>
+          <svg
+            width="323.47812mm"
+            height="231.13402mm"
+            viewBox="0 0 323.47812 231.13402"
+            version="1.1"
+            id="svg1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <defs id="defs1" />
+
+            <rect
+              style="
+                fill: none;
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect11"
+              width="19.408199"
+              height="34.934757"
+              x="1.058629"
+              y="21.525457"
+            />
+            <rect
+              onclick="showInfo('AB Chemistry Lab', '(the room description)', 'M 157.50298,195.95761 V 170.67255 H 56.460217 V 125.09467 H 74.456911 V 89.807033 h -5.646023')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect17"
+              width="67.752258"
+              height="38.463528"
+              x="1.058629"
+              y="56.460213"
+            />
+            <rect
+              onclick="showInfo('AB1', '(the room description)', 'M 157.50298,195.95761 V 170.79216 H 56.142286 v -45.53248 h 18.215052 v -15.2208 h -5.54645')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect18"
+              width="67.752258"
+              height="21.525463"
+              x="1.058629"
+              y="94.923737"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'M 157.50298,195.95761 V 170.79216 H 56.142286 l 0,-50.01133 -30.558751,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect19"
+              width="12.350672"
+              height="8.9983473"
+              x="13.232863"
+              y="116.4492"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'M 157.50298,195.95761 V 170.79216 H 56.142286 V 130.50222 H 49.40269')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect20"
+              width="36.169827"
+              height="9.5276613"
+              x="13.232863"
+              y="125.44755"
+            />
+            <rect
+              onclick="showInfo('OVPAA Office', '(the room description)', 'M 157.50298,195.95761 V 170.79216 H 56.142286 l 0,-16.29435 H 49.40269')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect21"
+              width="36.169827"
+              height="24.172035"
+              x="13.232863"
+              y="134.9752"
+            />
+            <rect
+              onclick="showInfo('Registrar\'s Office', '(the room description)', 'M 157.50298,195.95761 V 170.79216 H 56.142286 l 0,-6.06398 H 49.40269')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect22"
+              width="36.169827"
+              height="36.169819"
+              x="13.232863"
+              y="159.14725"
+            />
+            <rect
+              onclick="showInfo('Management Information System Department', '(the room description)', 'M 157.50298,195.95761 V 170.67255 H 56.460217 v -45.57788 h 17.996694 l 0,-75.515542 h -5.646023')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect23"
+              width="48.344059"
+              height="34.934753"
+              x="20.466825"
+              y="21.525455"
+            />
+            <rect
+              onclick="showInfo('Physics Lab', '(the room description)', 'M 157.50298,195.95761 V 170.67255 H 56.460217 V 125.09467 H 74.456911 V 49.579128 l 13.624098,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect24"
+              width="33.435852"
+              height="32.620659"
+              x="88.081009"
+              y="21.525454"
+            />
+            <rect
+              onclick="showInfo('Office of the College President', '(the room description)', 'M 157.50298,195.95761 V 118.56646 H 127.38836 V 50.990634 h 26.2893 v -3.581593')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect33"
+              width="38.675793"
+              height="25.883589"
+              x="121.51686"
+              y="21.525454"
+            />
+            <rect
+              onclick="showInfo('Faculty Room', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 V 50.461319 h -5.64603')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect39"
+              width="54.519398"
+              height="34.758327"
+              x="197.96364"
+              y="21.525452"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 l 0,-92.453605')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect40"
+              width="11.644925"
+              height="10.939174"
+              x="252.48303"
+              y="21.525452"
+            />
+            <rect
+              onclick="showInfo('VPRI Office', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 V 50.108443 l 5.99753,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect41"
+              width="58.117847"
+              height="35.11396"
+              x="264.12659"
+              y="21.524075"
+            />
+            <rect
+              onclick="showInfo('VPEL Office', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 l 0,-43.580229 h 5.99753')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect42"
+              width="58.117847"
+              height="30.195366"
+              x="264.12659"
+              y="56.638035"
+            />
+            <rect
+              onclick="showInfo('QA and Records Management Office', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 l 0,-14.99724 h 5.99753')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect43"
+              width="58.117867"
+              height="27.946379"
+              x="264.12659"
+              y="86.833405"
+            />
+            <rect
+              onclick="showInfo('Faculty Room', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 l 0,-48.873374 h -5.64599')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect44"
+              width="54.519478"
+              height="23.563107"
+              x="197.96359"
+              y="56.283737"
+            />
+            <rect
+              onclick="showInfo('Faculty Room', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 V 87.689776 l -6.11258,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect45"
+              width="54.052891"
+              height="51.151817"
+              x="197.96359"
+              y="79.846848"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'm 157.50298,195.95761 v -25.16545 h 110.33017 v -45.87393 h -9.70409 V 87.689776 h -24.07811 l 0,-25.059937 -71.90426,0 v -5.463868 h 4.13346')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect46"
+              width="18.01705"
+              height="6.527916"
+              x="166.28015"
+              y="54.349113"
+            />
+            <rect
+              onclick="showInfo('Lazaro Hall', '(the room description)', 'M 157.50298,195.95761 V 140.48047')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect47"
+              width="51.151836"
+              height="64.626007"
+              x="132.74532"
+              y="75.854462"
+            />
+            <rect
+              onclick="showInfo('Office of Student Affairs', '(the room description)', 'm 157.50298,195.95761 v -70.6865 h -43.52392 v -6.74852')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect49"
+              width="22.207388"
+              height="21.458828"
+              x="99.309464"
+              y="97.063766"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'm 157.50298,195.95761 v -70.6865 l -70.871838,0 v -6.74852')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect50"
+              width="18.464577"
+              height="21.458824"
+              x="80.844887"
+              y="97.063766"
+            />
+            <rect
+              onclick="showInfo('Cashier', '(the room description)', 'm 157.50298,195.95761 v -25.28506 h -46.71554 v -4.24186')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect51"
+              width="61.382229"
+              height="26.199734"
+              x="62.130795"
+              y="140.23096"
+            />
+            <rect
+              onclick="showInfo('Health Services Office', '(the room description)', 'm 157.50298,195.95761 v -25.28506 h -41.47559 v 29.69304 H 77.351593')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect52"
+              width="15.220798"
+              height="30.940636"
+              x="62.130795"
+              y="175.41345"
+            />
+            <rect
+              onclick="showInfo('Dental Clinic', '(the room description)', 'm 157.50298,195.95761 v -25.28506 h -41.47559 v 4.7409')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect53"
+              width="44.664307"
+              height="30.940636"
+              x="77.351593"
+              y="175.41345"
+            />
+            <rect
+              onclick="showInfo('Security Office', '(the room description)', 'M 157.50298,195.95761 V 178.29078 H 134.24243')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect54"
+              width="12.22654"
+              height="30.940636"
+              x="122.01589"
+              y="175.41345"
+            />
+            <rect
+              onclick="showInfo('Testing Room', '(the room description)', 'm 157.50298,195.95761 v -26.04764 h 45.93024 v -5.22593')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect55"
+              width="16.967445"
+              height="24.453083"
+              x="191.63232"
+              y="140.23096"
+            />
+            <rect
+              onclick="showInfo('Guidance Office', '(the room description)', 'm 157.50298,195.95761 v -26.04764 h 55.98722 v -5.22593')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect56"
+              width="28.694963"
+              height="24.453079"
+              x="208.59976"
+              y="140.23096"
+            />
+            <rect
+              onclick="showInfo('Consultation Room', '(the room description)', 'M 157.50298,195.95761 V 169.90997 H 259.717 v -5.22593')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect57"
+              width="26.449257"
+              height="24.453075"
+              x="237.29472"
+              y="140.23096"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'M 157.50298,195.95761 V 170.0864 h 111.3888 v -10.40985 h 9.32444')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect58"
+              width="23.455"
+              height="25.45117"
+              x="278.21622"
+              y="139.7319"
+            />
+            <rect
+              onclick="showInfo('Speech Lab', '(the room description)', 'M 157.50298,195.95761 V 170.0864 h 115.9723')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect59"
+              width="28.19589"
+              height="40.67197"
+              x="273.47528"
+              y="165.18307"
+            />
+            <rect
+              onclick="showInfo('Deans\' Office', '(the room description)', 'M 157.50298,195.95761 V 170.0864 h 72.71292 l 0,5.07754')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect60"
+              width="50.153744"
+              height="30.691107"
+              x="223.32153"
+              y="175.16394"
+            />
+            <rect
+              onclick="showInfo('VPS', '(the room description)', 'M 157.50298,195.95761 V 170.0864 l 60.80667,0 v 5.07754')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.655;
+                stroke-dasharray: none;
+              "
+              id="rect61"
+              width="40.422443"
+              height="30.691099"
+              x="182.89909"
+              y="175.16394"
+            />
+            <g id="g72" style="display: inline">
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="M 68.810882,21.525455 H 88.081008"
+                id="path23"
+              />
+              <path
+                style="
+                  display: inline;
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 176.41154,21.443693 v 22.47205 h -8.98277 v -22.39029 h -7.23612 37.77099"
+                id="path37"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 13.232863,195.31706 v 11.03703 H 134.24244"
+                id="path51"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 134.24243,195.49991 h 17.49769 v -2.86949 c 2.68552,-0.24363 4.60647,0.86543 5.76286,3.32719 1.06281,-2.61812 2.94899,-3.70711 5.65855,-3.26697 l -0.007,2.80927 19.74454,-0.37428"
+                id="path61"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="M 197.96359,85.39608 H 183.89715 V 65.811442 H 166.3812 v 10.043019 h -33.63589 v -9.866582 h 25.87261 V 54.342958 h -25.92571 l 0.0531,11.644921 V 54.342958 h 33.90055 31.31778"
+                id="path62"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 183.89715,130.56425 h 14.06644 v 9.66671"
+                id="path63"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 132.74531,130.74069 h -11.1794 v 9.49027"
+                id="path64"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 129.86432,166.36401 v -26.09566 c 18.67949,0.21212 37.14891,0.21158 55.71157,0.21158 v 24.20411"
+                id="path65"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.655;
+                  stroke-dasharray: none;
+                "
+                d="m 121.51685,118.5226 0.0491,12.21809 v 9.49027 H 99.059983 l 0.249518,-21.70836 -18.464575,-1e-5 v 21.70837 H 62.130794 v -6.48756 h 18.714095"
+                id="path66"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.2;
+                  stroke-dasharray: none;
+                "
+                d="m 263.74398,140.23096 h 14.47224 v 0.83136 h -14.47224 v 1.05863 h 14.47224 v 1.10274 h -14.47224 v 0.9263 h 14.47224 v 1.05863 h -14.47224 v 0.88219 h 14.47224"
+                id="path67"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.2;
+                  stroke-dasharray: none;
+                "
+                d="M 62.130794,133.7434 H 49.40269 v 0.72455 h 12.728104 v 0.77191 H 49.40269 v 0.77192 h 12.728104 v 0.9754 H 49.40269 V 137.71 h 12.728104 v 0.66164 H 49.40269 v 0.6837 h 12.728104 v 0.59548 H 49.40269 v 0.57342 h 12.728104"
+                id="path68"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.2;
+                  stroke-dasharray: none;
+                "
+                d="m 123.51302,140.23096 h 6.33161 v 0.65499 h -6.33161 v 0.74856 h 6.3513 v 0.68618 h -6.3513 v 0.77976 h 6.3513 v 0.74856 h -6.3513 v 0.71737 h 6.3513 v 0.68619 h -6.3513 v 0.71737 h 6.3513 v 0.68618 h -6.3513 v 0.655 h 6.3513 v 0.68618 h -6.3513 v 0.65499 h 6.3513 v 0.59262 h -6.3513 v 0.53023 h 6.3513 v 0.59261 h -6.3513 v 0.655 h 6.3513 v 0.65499 h -6.3513 v 0.6238 h 6.3513 v 0.79409 h -6.3513 v 0.79439 h 6.3513 v 0.6238 h -6.3513 v 0.71738 h 6.3513 v 0.68618 h -6.3513 v 0.77976 h 6.3513 v 0.65499 h -6.3513 v 0.77976 h 6.3513 v 0.81094 h -6.3513"
+                id="path69"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.2;
+                  stroke-dasharray: none;
+                "
+                d="m 185.57589,140.47993 h 6.03765 v 0.64638 h -6.03765 v 0.73871 h 6.05643 v 0.67716 h -6.05643 v 0.7695 h 6.05643 v 0.73872 h -6.05643 v 0.70794 h 6.05643 v 0.67716 h -6.05643 v 0.70794 h 6.05643 v 0.67716 h -6.05643 v 0.64638 h 6.05643 v 0.67716 h -6.05643 v 0.64638 h 6.05643 v 0.58482 h -6.05643 v 0.52326 h 6.05643 v 0.58482 h -6.05643 v 0.64638 h 6.05643 v 0.64638 h -6.05643 v 0.6156 h 6.05643 v 0.73617 h -6.05643 v 0.78395 h 6.05643 v 0.61559 h -6.05643 v 0.70795 h 6.05643 v 0.67716 h -6.05643 v 0.7695 h 6.05643 v 0.64638 h -6.05643 v 0.7695 h 6.05643 v 0.80028 h -6.05643"
+                id="path70"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665;
+                  stroke-dasharray: none;
+                "
+                d="M 301.67119,139.7319 V 114.77978"
+                id="path71"
+              />
+              <path
+                style="
+                  display: inline;
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                "
+                d="M 80.844886,97.063765 V 56.460212 h 40.671964 v 40.603551"
+                id="path95"
+              />
+            </g>
+          </svg>
+          <p style="top: 74%; left: 4.7%">Registrar's<br />Office</p>
+          <p style="top: 60%; left: 5.7%">OVPAA's<br />Office</p>
+          <p style="top: 54.5%; left: 9%">T</p>
+          <p style="top: 50.5%; left: 5.5%">T</p>
+          <p style="top: 44%; left: 9%">AB1</p>
+          <p style="top: 31%; left: 4.2%">AB Chem Lab</p>
+          <p style="top: 15%; left: 11%">MISD</p>
+          <p style="top: 13%; left: 29%">Physics<br />Lab</p>
+          <p style="top: 30%; left: 28.5%">Open<br />Below</p>
+          <p style="top: 45%; left: 27.3%">T</p>
+          <p style="top: 45%; left: 32%">OSA</p>
+          <p style="top: 65%; left: 25%">Cashier</p>
+          <p style="top: 81%; left: 19.5%">HSO</p>
+          <p style="top: 81%; left: 24.7%">Dental Clinic</p>
+          <p id="small-text" class="small-text" style="top: 81.5%; left: 38.2%">
+            SEC
+          </p>
+          <p style="top: 45%; left: 44%">Lazaro Hall</p>
+          <p id="small-text" class="small-text" style="top: 23.7%; left: 53.7%">
+            T
+          </p>
+          <p style="top: 12%; left: 38.3%">President's<br />Office</p>
+          <p style="top: 15%; left: 63%">Faculty Room</p>
+          <p style="top: 27.5%; left: 63%">Faculty Room</p>
+          <p style="top: 43%; left: 63%">Faculty Room</p>
+          <p id="small-text" class="small-text" style="top: 63%; left: 59.6%">
+            Test<br />Room
+          </p>
+          <p id="small-text" class="small-text" style="top: 63%; left: 65.4%">
+            Guidance<br />Office
+          </p>
+          <p id="small-text" class="small-text" style="top: 63%; left: 73.7%">
+            Consultati<br />-on Room
+          </p>
+          <p style="top: 81%; left: 58%">VPS Room</p>
+          <p style="top: 81%; left: 70.7%">Deans' Office</p>
+          <p style="top: 77%; left: 85.5%">Speech<br />Lab</p>
+          <p style="top: 65%; left: 89%">T</p>
+          <p id="small-text" class="small-text" style="top: 41%; left: 82.5%">
+            Quality Assurance and<br />Records Management
+          </p>
+          <p style="top: 29.5%; left: 85%">VPEL Office</p>
+          <p style="top: 15.5%; left: 85.5%">VPRI Office</p>
+          <p style="top: 10%; left: 79.3%">T</p>
+        </div>
+
+        <div class="svg-container second-floor" hidden>
+          <svg
+            width="323.47812mm"
+            height="231.13402mm"
+            viewBox="0 0 323.47812 231.13402"
+            version="1.1"
+            id="svg1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <defs id="defs1" />
+            <rect
+              onclick="showInfo('AB LG Room 4', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 v -23.199 H 81.196481 V 44.901281 h -5.656197')"
+              style="stroke: #000000; stroke-width: 0.665001"
+              id="rect1"
+              width="61.933651"
+              height="36.597157"
+              x="13.606634"
+              y="14.545024"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 3', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 v -23.199 H 81.196481 l 0,-36.669376 h -5.656197')"
+              style="stroke: #000000; stroke-width: 0.667534"
+              id="rect2"
+              width="61.933647"
+              height="35.189571"
+              x="13.606633"
+              y="51.142181"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 2', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 v -23.199 H 81.196481 l 0,-26.192411 h -5.656197')"
+              style="stroke: #000000; stroke-width: 0.665632"
+              id="rect3"
+              width="61.933647"
+              height="35.424171"
+              x="13.606632"
+              y="86.331757"
+            />
+            <rect
+              onclick="showInfo('Storage Room', '(the room description)', 'm 130.51021,168.70529 v 5.66135 h 17.66401 V 141.43903 H 129.27827 V 117.86586 H 81.196481 v 22.07646 H 69.596983 v 36.10812 h -5.897054')"
+              style="stroke: #000000; stroke-width: 0.665001"
+              id="rect4"
+              width="36.826523"
+              height="38.485378"
+              x="26.873407"
+              y="141.00246"
+            />
+            <rect
+              style="
+                fill: #1a1a1a;
+                stroke: #000000;
+                stroke-width: 0.674174;
+                pointer-events: none;
+              "
+              id="rect5"
+              width="36.826523"
+              height="32.845253"
+              x="26.873407"
+              y="179.48784"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 5', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 v -23.199 H 81.196481 l 0,-67.485822 5.47856,0')"
+              style="stroke: #000000; stroke-width: 0.665001"
+              id="rect6"
+              width="36.411812"
+              height="39.533566"
+              x="86.675041"
+              y="14.545024"
+            />
+            <rect
+              onclick="showInfo('Gazebo', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 l 0,-58.675277 h -7.12686')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.668051;
+                stroke-dasharray: 2.67220402, 0.668051;
+                stroke-dashoffset: 0;
+              "
+              id="rect7"
+              width="36.411808"
+              height="59.055145"
+              x="86.675041"
+              y="54.07859"
+            />
+            <rect
+              onclick="showInfo('CCFFA', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -31.78017')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect8"
+              width="36.328865"
+              height="24.551014"
+              x="86.426208"
+              y="121.76231"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 1', '(the room description)', 'm 130.51021,168.70529 v 5.66135 h 17.66401 V 141.43903 H 129.27827 V 117.86586 H 81.196481 v 22.07646 H 69.596983 v 36.10812 l 5.549028,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect9"
+              width="47.609062"
+              height="33.177055"
+              x="75.146011"
+              y="146.31332"
+            />
+            <rect
+              onclick="showInfo('Storage Room', '(the room description)', 'm 130.51021,168.70529 v 5.66135 h 17.66401 V 141.43903 H 129.27827 V 117.86586 H 81.196481 v 22.07646 H 69.596983 l 0,44.34002 h 5.549028')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665426;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect10"
+              width="47.609062"
+              height="32.842712"
+              x="75.146011"
+              y="179.49039"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 6', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 V 140.87777 H 130.21371 V 48.732701 h -3.48884 l 0,-10.037388 h 3.16327')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect12"
+              width="36.328869"
+              height="31.736958"
+              x="129.88814"
+              y="14.545024"
+            />
+            <rect
+              onclick="showInfo('AB LG Room 7', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 V 140.87777 H 130.21371 V 48.732701 h 41.97371 v -2.450718')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.66327;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect13"
+              width="36.328865"
+              height="31.736959"
+              x="166.21701"
+              y="14.545024"
+            />
+            <rect
+              onclick="showInfo('Simulation Room', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 V 140.87777 H 130.21371 V 57.693877 l 6.64159,0')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect14"
+              width="50.09734"
+              height="24.7169"
+              x="136.85532"
+              y="51.590309"
+            />
+            <rect
+              onclick="showInfo('Socios/Sentinel/SSC', '(the room description)', 'm 130.51021,168.70529 v 6.03552 l 32.25693,0 v -38.90906')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect15"
+              width="33.462219"
+              height="59.524548"
+              x="136.8553"
+              y="76.307205"
+            />
+            <rect
+              onclick="showInfo('Office of Student Affairs', '(the room description)', 'm 186.81414,168.70529 v 6.18429 h -8.22039 v -32.80833 h 8.06979 v -6.25449')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.674969;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect16"
+              width="31.426067"
+              height="42.921307"
+              x="170.32251"
+              y="92.905457"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'm 186.81414,168.70529 v 6.31658 h 10.82961 v -5.76002')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect25"
+              width="11.729857"
+              height="22.052132"
+              x="190.37558"
+              y="147.20972"
+            />
+            <rect
+              onclick="showInfo('Physical Education Room', '(the room description)', 'm 186.81414,168.70529 v 6.31658 l 70.5109,0 v -5.76002')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.663239;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect26"
+              width="58.766598"
+              height="22.052122"
+              x="202.10544"
+              y="147.20972"
+            />
+            <rect
+              onclick="showInfo('Physical Education Room', '(the room description)', 'm 186.81414,168.70529 v 6.31658 h 78.36862 v -11.74')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.669709;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect27"
+              width="42.696583"
+              height="16.074394"
+              x="260.86978"
+              y="147.20747"
+            />
+            <rect
+              onclick="showInfo('Female CR', '(the room description)', 'm 186.81414,168.70529 v 8.49939 l 84.9832,-0.13229 v -2.53211')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect28"
+              width="8.6800947"
+              height="11.260664"
+              x="269.66943"
+              y="163.27962"
+            />
+            <rect
+              onclick="showInfo('Male CR', '(the room description)', 'm 186.81414,168.70529 v 8.49939 l 93.51601,-0.13229 v -2.53211')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.661564;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect29"
+              width="8.3282089"
+              height="11.260672"
+              x="278.34952"
+              y="163.27962"
+            />
+            <rect
+              onclick="showInfo('Student Center', '(the room description)', 'm 186.81414,168.70529 v 8.49939 l 28.62929,-0.13229 0,2.74722')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect30"
+              width="99.877632"
+              height="22.168541"
+              x="122.75507"
+              y="179.81961"
+            />
+            <rect
+              style="
+                fill: #1a1a1a;
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+                pointer-events: none;
+              "
+              id="rect31"
+              width="45.746445"
+              height="33.898399"
+              x="222.63271"
+              y="179.81961"
+            />
+            <rect
+              style="
+                fill: #1a1a1a;
+                stroke: #000000;
+                stroke-width: 0.667314;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+                pointer-events: none;
+              "
+              id="rect32"
+              width="35.189571"
+              height="33.898407"
+              x="268.37915"
+              y="179.81961"
+            />
+            <rect
+              onclick="showInfo('Toilet', '(the room description)', 'm 130.51021,168.70529 v 6.03552 h 24.02503 v -33.86304 h -24.32153 v -23.199 H 81.196481 V 50.192948 h 2.898872 l 0,-9.799893')"
+              style="
+                stroke: #000000;
+                stroke-width: 0.665001;
+                stroke-dasharray: none;
+                stroke-dashoffset: 0;
+              "
+              id="rect34"
+              width="5.7230439"
+              height="12.441393"
+              x="80.951996"
+              y="27.951662"
+            />
+            <g id="g42">
+              <path
+                style="fill: none; stroke: #000000; stroke-width: 0.665001"
+                d="M 75.540282,14.545024 H 86.675038"
+                id="path5"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: 2.67221, 0.668052;
+                  stroke-dashoffset: 0;
+                "
+                d="M 104.83947,67.681178 89.743914,82.113193 104.67359,97.042866 119.85208,82.196135 Z"
+                id="path8"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 123.08685,14.545024 h 6.80129"
+                id="path11"
+              />
+              <path
+                style="
+                  fill: #1a1a1a;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 202.54588,38.485376 h 89.24625 v 73.321274 h -90.04354 z"
+                id="path17"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 253.9703,38.485376 v 73.321274 h 37.82183 V 86.75798 H 253.9703 V 62.538736 h 37.82183"
+                id="path21"
+              />
+              <path
+                style="
+                  fill: #1a1a1a;
+                  stroke: #000000;
+                  stroke-width: 0.663664;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="M 202.54635,14.544552 H 322.99169 V 119.17582 H 299.42401 V 14.544552"
+                id="path25"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 186.95265,51.59031 h 15.45072"
+                id="path29"
+              />
+              <path
+                style="
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="M 303.56873,179.81961 V 119.17535"
+                id="path32"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.658834;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="M 13.849728,14.542846 H 0.49456729 V 212.3126 H 26.87131"
+                id="path33"
+              />
+              <path
+                style="
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="M 63.699926,212.3331 H 75.14601"
+                id="path34"
+              />
+              <path
+                style="
+                  fill: #1a1a1a;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 210.67425,14.545024 v 9.34245 h 24.55102 v 10.782541 h 50.42911 V 14.545024 Z"
+                id="path35"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 122.75507,146.31332 h 4.39597 v 22.39197"
+                id="path36"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.665001;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 133.86939,168.70529 v -22.39197 h 49.58558 v 22.65528"
+                id="path40"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.265;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 127.15104,146.31332 h 6.71835 v 1.8222 h -6.71835 v 2.03209 h 6.71835 v 1.94915 h -6.71835 v 2.15651 h 6.71835 v 1.99063 h -6.71835 v 2.32239 h 6.71835 v 2.23945 h -6.71835 v 1.99062 h 6.71835 v 1.82474 h -6.71835 v 1.86621 h 6.71835 v 2.19798 h -6.71835"
+                id="path41"
+              />
+              <path
+                style="
+                  fill: none;
+                  stroke: #000000;
+                  stroke-width: 0.265;
+                  stroke-dasharray: none;
+                  stroke-dashoffset: 0;
+                "
+                d="m 183.45497,146.31332 h 6.71835 v 1.8222 h -6.71835 v 2.03209 h 6.71835 v 1.94915 h -6.71835 v 2.15651 h 6.71835 v 1.99063 h -6.71835 v 2.32239 h 6.71835 v 2.23945 h -6.71835 v 1.99062 h 6.71835 v 1.82474 h -6.71835 v 1.86621 h 6.71835 v 2.19798 h -6.71835"
+                id="path42"
+              />
+            </g>
+          </svg>
+
+          <p style="top: 28%; left: 71%; color: white">Not<br />Accessible</p>
+          <p style="top: 82%; left: 77%; color: white">Not<br />Accessible</p>
+          <p style="top: 7.5%; left: 75.5%; color: white">
+            Not<br />Accessible
+          </p>
+          <p style="top: 81%; left: 9%; color: white">Not<br />Accessible</p>
+          <p style="top: 13%; left: 8.5%">AB Room 4</p>
+          <p style="top: 28%; left: 8.5%">AB Room 3</p>
+          <p style="top: 43%; left: 8.5%">AB Room 2</p>
+          <p style="top: 66%; left: 10.2%">Storage<br />Room</p>
+          <p style="top: 81%; left: 26.8%">Storage<br />Room</p>
+          <p style="top: 69%; left: 25.5%">AB Room 1</p>
+          <p style="top: 56%; left: 29%">CCFFA</p>
+          <p style="top: 33.9%; left: 29%">Gazebo</p>
+          <p style="top: 13%; left: 27.3%">AB Room 5</p>
+          <p style="top: 13.4%; left: 25.5%" class="small-text" id="small-text">
+            T
+          </p>
+          <p style="top: 10%; left: 42%">AB<br />Room 6</p>
+          <p style="top: 10%; left: 53.4%">AB<br />Room 7</p>
+          <p style="top: 24.5%; left: 45%">Simulation<br />Room</p>
+          <p style="top: 41%; left: 43.2%">Socios<br />Sentinels<br />SSC</p>
+          <p style="top: 48%; left: 55.5%">OSA</p>
+          <p style="top: 81%; left: 46%">Student Center</p>
+          <p style="top: 67%; left: 60.1%">T</p>
+          <p style="top: 66.5%; left: 67%">PE Room</p>
+          <p style="top: 65.5%; left: 83%">PE Room</p>
+          <p style="top: 71.8%; left: 84.3%" class="small-text" id="small-text">
+            T
+          </p>
+          <p style="top: 71.8%; left: 86.9%" class="small-text" id="small-text">
+            T
+          </p>
+          <p style="top: 55%; left: 6%"><== To Canteen Area</p>
+        </div>
+      </div>
+
+      <div id="info-container" hidden></div>
+      <div class="floor-header admin-header"></div>
+      <div class="floor-pages">
+        <input
+          type="radio"
+          id="firstF-btn"
+          name="floor-btn"
+          value="firstF-btn"
+          checked
+          onclick="checkIfChecked(this)"
+        />
+        <label class="f-lbl" for="firstF-btn" data-abbr="GF"
+          ><span>Ground Floor</span></label
+        >
+
+        <input
+          type="radio"
+          id="secondF-btn"
+          name="floor-btn"
+          value="secondF-btn"
+          onclick="checkIfChecked(this)"
+        />
+        <label class="f-lbl" for="secondF-btn" data-abbr="B1F"
+          ><span>Basement</span></label
+        >
+
+        <!-- <input
+          type="radio"
+          id="thirdF-btn"
+          name="floor-btn"
+          value="thirdF-btn"
+          onclick="checkIfChecked(this)"
+        />
+        <label class="f-lbl" for="thirdF-btn" data-abbr="3F"
+          ><span>3rd Floor</span></label
+        > -->
+      </div>
+    </main>
+  </body>
+  <script src="../scripts/script.js"></script>
+</html>
